@@ -1,6 +1,6 @@
 import { fireEvent, render, waitFor } from "@testing-library/react";
 import UsersList from "../components/UsersList";
-import ListWithInput from "./ListWithInput";
+import ListWithInput from "../pages/ListWithInput";
 
 test("calculates result after user types value", async () => {
   const { getByLabelText, getByText } = render(<ListWithInput />);

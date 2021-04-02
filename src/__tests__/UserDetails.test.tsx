@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import UserDetails from "./UserDetails";
+import UserDetails from "../components/UserDetails";
 
 test("renders component", async () => {
   const location = { state: { login: "magnesDev" } };

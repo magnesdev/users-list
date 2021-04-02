@@ -1,13 +1,21 @@
 import { useHistory } from "react-router";
 
+import "../styles/pageWrapper.scss";
+
 const PageWrapper = ({ children }: any) => {
   let history = useHistory();
   return (
-    <div>
-      <button onClick={() => history.push("/search")}>
+    <div className="page-wrapper-container">
+      <button
+        className="page-wrapper-container__button"
+        onClick={() => history.push("/search")}
+      >
         View with serach input
       </button>
-      <button onClick={() => history.push("/")}>
+      <button
+        className="page-wrapper-container__button"
+        onClick={() => history.push("/")}
+      >
         View without serach input
       </button>
       {children}

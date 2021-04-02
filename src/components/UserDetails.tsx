@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
+
 import { getUser } from "../Service/api";
 
 interface UserDetailsProps {
@@ -18,7 +19,6 @@ const UserDetails = (props: UserDetailsProps) => {
   return (
     <>
       <button onClick={() => history.goBack()}>Back to list</button>
-      <p>Followers:</p>
       {userData && (
         <article>
           <h2>{userData.login}</h2>
